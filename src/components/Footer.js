@@ -15,9 +15,8 @@ const Footer = () => {
                     <div className="col-span-12 lg:col-span-4">
                         <div className="box-border border-b-4 border-blue-900 p-8 bg-gray-200 text-gray-600 text-center rounded-lg xl:w-80 mx-auto">
                             <h3 className="font-bold text-4xl mb-4">ICE CONNECT</h3>
-                            <div className='text-md font-medium text-gray-600'>
-                                <h5>Sikaria Compound, Christian Basti, G.S. Road,
-                                Guwahati- 781005</h5>     
+                            <div className='text-small font-medium text-gray-600'>
+                                <h5>303, 3rd FLOOR TEMPLE TOWER, SIKARIA COMPOUND G S ROAD, DISPUR, GUWAHATI-781005</h5>     
                             </div>
                         </div>
                     </div>
