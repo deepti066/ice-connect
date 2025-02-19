@@ -21,19 +21,22 @@ const Hero = () => {
         </div>
 
         <div
-          className="h-screen m-auto overflow-hidden bg-gradient-to-br from-gray-800 via-blue-900 to-black mt-8 lg:mt-4 h-5/6"
+          className="h-screen w-full max-w-full m-auto overflow-hidden bg-gradient-to-br from-gray-800 via-blue-900 to-black mt-8 lg:mt-4 h-5/6"
           data-aos="zoom-in">
           <div id="hero" className="flex flex-col lg:flex-row py-8 justify-between text-center lg:text-left">
             <div className="lg:w-1/2 flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="200">
               <h1 className="md-15 md:text-2xl text-3xl font-bold text-white mt-16">
-                Fast and Secure Web Hosting
+              AT ICE CONNECT
               </h1>
               <div className="text-xl font-semibold tracking-tight mb-5 text-white">
-                We are a team of highly motivated and skilled developers dedicated to delivering only the best software.
+              We don't construct—we build experiences that propel success.
+              We are Internet Lease Line experts, offering fast, dedicated, and secure internet connections for companies of any size. 
+              From uninterrupted bandwidth to ultra-low latency or enterprise-class network solutions, our lease line solutions deliver rapid, consistent, 
+              and stable connectivity to ensure your operations keep running at top speed. Lead the way with the force of seamless internet, designed for business success.
               </div>
               <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                 <Link
-                  to="/contact"
+                  to="/about"
                   className="text-white bg-indigo-500 hover:bg-indigo-600 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
                 >
                   Learn more

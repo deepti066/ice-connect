@@ -3,34 +3,44 @@ import NavLinks from '../Navbar/NavLinks';
 import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
-    const [top, setTop] = useState(!window.scrollY);
-    const [isOpen, setisOpen] = React.useState(false);
-
-    const handleClick = () => {
-        setisOpen(!isOpen);
-        document.body.style.overflow = isOpen ? "auto" : "hidden"; // Prevent scroll when menu is open
-    };
+    const [top, setTop] = useState(true);
+    const [isOpen, setisOpen] = useState(false);
 
     useEffect(() => {
+        setTop(window.scrollY === 0);
+        
         const scrollHandler = () => {
-            window.pageYOffset > 10 ? setTop(false) : setTop(true);
+            setTop(window.scrollY <= 10);
         };
+
         window.addEventListener('scroll', scrollHandler);
         return () => window.removeEventListener('scroll', scrollHandler);
     }, []);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+    }, [isOpen]);
+
+    const handleClick = () => {
+        setisOpen((prev) => !prev);
+    };
+
     return (
-        <nav className={`fixed top-0 h-16 w-full z-30 flex transition duration-500 ease-in-out mb-16 ${!top && 'bg-gradient-to-br from-gray-800 via-blue-900 to-black shadow-lg'}`}>
-            <div className="flex justify-between items-center w-full px-6 py-2">
-                <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
+        <nav className={`fixed top-0 h-16 w-full z-30 flex transition-colors duration-500 ease-in-out ${top ? 'bg-gradient-to-br from-gray-800 via-blue-900 to-black' : 'bg-gradient-to-br from-gray-800 via-blue-900 to-black shadow-lg'}`}>
+            <div className="flex justify-between items-center w-full px-6 py-2 no-underline">
+                <div className="flex flex-row justify-end md:px-12 md:mx-12 items-center text-center font-semibold">
                     <HashLink smooth to="/">
-                        <h1 className="font-bold text-2xl md:text-4xl text-white">Ice Connect ISP</h1>
+                        <h1 className="font-bold text-2xl md:text-4xl text-white no-underline">ICE CONNECT ISP</h1>
                     </HashLink>
                 </div>
                 <div className="group flex flex-col items-center">
                     <button
                         aria-expanded={isOpen}
-                        className="p-2 rounded-lg lg:hidden text-white"
+                        className="p-2 rounded-lg lg:hidden bg-gradient-to-br from-gray-800 via-blue-900 to-black text-white"
                         onClick={handleClick}>
                         <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             {isOpen ? (
@@ -45,7 +55,7 @@ const NavBar = () => {
                     </div>
                     <div
                         role="menu"
-                        className={`fixed transition-transform duration-300 ease-in-out transform flex justify-center left-0 w-full h-auto rounded-md p-6 bg-white lg:hidden shadow-xl top-14 ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}>
+                        className={`fixed transition-transform duration-300 ease-in-out transform flex justify-center left-0 w-full h-auto rounded-md p-6 bg-gradient-to-br from-gray-800 via-blue-900 to-black lg:hidden shadow-xl top-14 ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}>
                         <div className="flex flex-col space-y-6">
                             <NavLinks />
                         </div>
