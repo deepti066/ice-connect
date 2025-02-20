@@ -34,7 +34,7 @@ const NavBar = () => {
             <div className="flex justify-between items-center w-full px-6 py-2 no-underline">
                 <div className="flex flex-row justify-end md:px-12 md:mx-12 items-center text-center font-semibold">
                     <HashLink smooth to="/">
-                        <h1 className="font-bold text-2xl md:text-4xl text-white no-underline">ICE CONNECT ISP</h1>
+                        <h1 className="font-bold text-2xl md:text-4xl text-white no-underline">ICE CONNECT</h1>
                     </HashLink>
                 </div>
                 <div className="group flex flex-col items-center">

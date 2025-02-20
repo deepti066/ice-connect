@@ -39,7 +39,7 @@ function App() {
     };
   }, []);
 
-  useDocTitle("ICE CONNECT ISP | System Integrations");
+  useDocTitle("ICE CONNECT | Internet Service Provider");
 
   return (
     <>
