@@ -23,7 +23,7 @@ const Footer = () => {
 
                     {/* 2nd block */}
                   <div className="col-span-6 md:col-span-6 lg:col-span-1 text-center mx-auto">
-                    <h6 className="text-[#013289] text-xl font-bold mb-4">LINKS</h6>
+                    <h6 className="text-[#013289] text-xl font-bold mb-4">QUICK LINKS</h6>
                     <ul className="text-md">
                         <li className="mb-2">
                             <HashLink to="/about" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">About</HashLink>
@@ -41,22 +41,22 @@ const Footer = () => {
                 </div>
 
                 {/* 3rd block */}
-                <div className="col-span-6 md:col-span-6 lg:col-span-4 text-center mx-auto">
-                    <h6 className="text-[#013289] text-xl font-bold mb-4">OUR SERVICES</h6>
-                    <ul className="text-md">
-                        <li className="mb-2">
-                            <Link to="/" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Broadband</Link>
-                        </li>
-                        <li className="mb-2">
-                            <Link to="/" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">OTT Bundle Subscription</Link>
-                        </li>
-                    </ul>
-                </div>
+                {/*<div className="col-span-6 md:col-span-6 lg:col-span-4 text-center mx-auto">*/}
+                {/*    <h6 className="text-[#013289] text-xl font-bold mb-4">OUR SERVICES</h6>*/}
+                {/*    <ul className="text-md">*/}
+                {/*        <li className="mb-2">*/}
+                {/*            <Link to="/" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Broadband</Link>*/}
+                {/*        </li>*/}
+                {/*        <li className="mb-2">*/}
+                {/*            <Link to="/" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">OTT Bundle Subscription</Link>*/}
+                {/*        </li>*/}
+                {/*    </ul>*/}
+                {/*</div>*/}
 
                 {/* 4th block */}
                 <div className="col-span-12 text-center mx-auto lg:col-span-3 font-bold uppercase text-blue-900">
-                    <div className="text-xl mb-6">Social Media Links.</div>
-                    <div className="text-md font-medium mb-6">Follow us on social media.</div>
+
+                    <div className="text-md font-medium mb-6">Follow us on</div>
                     
                     <div className="flex justify-center space-x-4 mt-2">
                         <Link to="#" className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../components/Navbar/NavBar";
+import Footer from "../components/Footer";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -70,6 +71,8 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <Footer />
+
     </>
   );
 };
