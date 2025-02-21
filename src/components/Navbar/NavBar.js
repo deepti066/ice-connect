@@ -54,9 +54,7 @@ const NavBar = () => {
                     <div className="hidden space-x-6 lg:inline-block p-5">
                         <NavLinks />
                     </div>
-                    <div
-                        role="menu"
-                        className={`fixed transition-transform duration-300 ease-in-out transform flex justify-center left-0 w-full h-auto rounded-md p-6 bg-gradient-to-br from-gray-800 via-blue-900 to-black lg:hidden shadow-xl top-14 ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}>
+                    <div role="menu" className={`fixed transition-transform duration-300 ease-in-out transform flex justify-center left-0 w-full h-auto rounded-md p-6 bg-gradient-to-br from-gray-800 via-blue-900 to-black lg:hidden shadow-xl top-14 ${isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}>
                         <div className="flex flex-col space-y-6">
                             <NavLinks />
                         </div>

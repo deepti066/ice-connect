@@ -17,22 +17,19 @@ const Hero = () => {
     <>
       <div
           className="h-screen w-full max-w-full m-auto overflow-hidden mt-8 lg:mt-4"
-          data-aos="zoom-in"
-      >
+          data-aos="zoom-in">
         <div>
           <NavBar />
         </div>
         <div
             id="hero"
-            className="flex flex-col lg:flex-row items-center py-8 text-center lg:text-left"
-        >
+            className="flex flex-col lg:flex-row items-center py-8 text-center lg:text-left">
           {/* Left Side - Vertically Centered Text */}
           <div
               className="lg:w-1/2 flex flex-col justify-center items-center lg:items-start"
               data-aos="zoom-in"
-              data-aos-delay="200"
-          >
-            <p className="text-xl text-gray-700 mt-2 mb-5 text-justify p-5">
+              data-aos-delay="200">
+            <p className="text-xl text-gray-700 mt-2 mb-5 mt-7 text-justify p-5">
               We don't construct—we build experiences that propel success. We are
               Internet Lease Line experts, offering fast, dedicated, and secure
               internet connections for companies of any size. From uninterrupted
@@ -48,18 +45,16 @@ const Hero = () => {
           <div
               className="flex lg:justify-end w-full lg:w-1/2 pr-8 mt-8"
               data-aos="fade-up"
-              data-aos-delay="700"
-          >
+              data-aos-delay="700">
             <Carousel
                 className="w-full"
                 interval={3000}
                 fade
                 activeIndex={currentIndex}
-                onSelect={handleSelect}
-            >
+                onSelect={handleSelect}>
               <Carousel.Item>
                 <img
-                    className="d-block w-100 rounded-t mt-40"
+                    className="d-block w-100 rounded-t mt-40 md:w-32 "
                     src={Img1}
                     alt="First slide"
                 />

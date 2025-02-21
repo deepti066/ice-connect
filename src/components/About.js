@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './Navbar/NavBar';
+import Footer from "../components/Footer";
 
 
 const About = () => {
@@ -59,6 +60,7 @@ const About = () => {
         open doors and make possibilities a reality. We aim to create long-term relationships with our customers, helping them succeed in a more interconnected world.
       </p>
     </div>
+    <Footer />
 
     </>
   )

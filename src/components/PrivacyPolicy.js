@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
         <li>Opt-out of marketing communications.</li>
         <li>Request data portability.</li>
       </ul>
-      <p>To exercise these rights, contact us at [Insert Contact Information].</p>
+      <p>To exercise these rights, contact us at <a href="mailto:services@iceconnectisp.com" className="text-blue-500">services@iceconnectisp.com</a></p>
 
       <h2 className="text-2xl font-semibold mt-6">6. Cookies and Tracking Technologies</h2>
       <p>

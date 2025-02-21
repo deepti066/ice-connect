@@ -21,6 +21,7 @@ import About from './components/About';
 import Broadband from './components/Broadband';
 import Internetservice from './components/Internet-service';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Terms from './components/Terms';
 
 function App() {
   useEffect(() => {
@@ -57,6 +58,8 @@ function App() {
             <Route path="/broadband" element={<Broadband />} />
             <Route path="/internet" element={<Internetservice />} />
             <Route path="/Privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<Terms />} />
+
           </Routes>
         </ScrollToTop>
       </Router>
