@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
     </div>
     <div className="max-w-4xl mx-auto p-6 text-gray-800 items-center" data-aos="zoom-in" data-aos-delay="200">
     <h1 className="text-3xl font-bold mt-16 text-center">Terms & Conditions</h1>
-            <p className="mb-4">VISITORS TO THIS SITE/APPLICATION ARE SUBJECT TO THE FOLLOWING TERMS AND CONDITIONS ("TERMS") SO PLEASE READ THE FOLLOWING TERMS CAREFULLY BEFORE CONTINUING TO USE THIS SITE</p>
+            <p className="mb-4">Visitors to this site/application are subject to the following terms and conditions ("TERMS") so please read the following terms carefully before continuing to use this site:</p>
             <ol className="list-decimal pl-6 space-y-2">
                 <li>Tariffs/Charges for the plans opted are to be remitted in advance and such charges are non-refundable as the service is prepaid. Subject to the acceptability of the application and technical feasibility, Ice Connect ISP Pvt. Ltd. shall endeavor to make the Service available at the earliest time.</li>
                 <li>The Approximate time of connection installation and service is 5-10 days from the date of picking up order form.</li>
