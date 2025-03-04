@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
-import Img1 from '../images/cloud-2.png';
-// import Img2 from '../images/hosting.svg'
+import slide1 from '../images/hero-slide1.jpg';
+import slide2 from '../images/hero-slide2.jpg';
+import slide3 from '../images/hero-slide3.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Hero = () => {
@@ -54,22 +55,22 @@ const Hero = () => {
                 onSelect={handleSelect}>
               <Carousel.Item>
                 <img
-                    className="d-block w-100 rounded-t mt-40 md:w-32 "
-                    src={Img1}
+                    className="d-block w-100 h-[500px] rounded-t mt-40 md:w-32"
+                    src={slide1}
                     alt="First slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                    className="d-block w-100 rounded-t mt-40"
-                    src={Img1}
+                    className="d-block w-100 h-[500px] rounded-t mt-40"
+                    src={slide2}
                     alt="Second slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                    className="d-block w-100 rounded-t mt-40"
-                    src={Img1}
+                    className="d-block w-100 h-[500px] rounded-t mt-40"
+                    src={slide3}
                     alt="Third slide"
                 />
               </Carousel.Item>
