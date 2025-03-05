@@ -13,10 +13,10 @@ const Footer = () => {
 
                     {/* 1st block */}
                     <div className="col-span-12 xl:col-span-4 overflow:hidden">
-                        <div className="box-border border-b-4 border-blue-900 p-8 bg-gray-200 text-gray-600 text-center rounded-lg xl:w-80 mx-auto">
+                        <div className="box-border border-b-4 border-blue-900 p-8 bg-gray-200 text-gray-600 text-center rounded-full xl:w-80 mx-auto"   >
                             <h3 className="font-bold text-4xl mb-4">ICE CONNECT</h3>
                             <div className='text-small font-medium text-gray-600'>
-                                <h5>303, 3rd FLOOR TEMPLE TOWER, SIKARIA COMPOUND G S ROAD, DISPUR, GUWAHATI-781005</h5>     
+                                <h5>303, 3rd FLOOR TEMPLE TOWER, SIKARIA COMPOUND G.S.ROAD, DISPUR, GUWAHATI-781005</h5>     
                             </div>
                         </div>
                     </div>

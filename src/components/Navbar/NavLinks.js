@@ -42,9 +42,12 @@ const NavLinks = () => {
                 <HashLink className="px-4 text-white hover:text-black no-underline" to="/hosting">
                     Services
                 </HashLink>
-                <HashLink className="px-4 text-white hover:text-black no-underline" to="/contact">
+                <HashLink
+                    className="px-4 text-white bg-teal-500 hover:bg-teal-700 font-bold py-2 px-4 rounded no-underline"
+                    to="/contact">
                     Contact Us
                 </HashLink>
+
             </div>
         </>
     );
